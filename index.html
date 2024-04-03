@@ -167,10 +167,11 @@ div.className="Undo"
 div.style.padding = "5px";
 document.querySelector("body").insertBefore(div, document.querySelector("#restartButton"));
 
-div.addEventListener('click', ()=>{
-    if(arr.length != 0){
-        let val = arr.pop();
-        val.innerText = "";
+div.addEventListener('click', () => {
+    if (arr.length != 0) {
+        let cell = arr.pop();
+        cell.innerText = "";
+        val= changeval(val);
     }
 });
  </script>
